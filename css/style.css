@@ -132,16 +132,9 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-
 /*common css end*/
+
+
 
 /*heading start*/
 
@@ -204,29 +197,96 @@ img {
 /*heading end*/
 
 
+
+/*scroll-btn*/
+
+.scroll-btn{
+    
+    
+    position: fixed;
+    right:30px;
+    bottom: 30px;
+    width:50px;
+    height: 50px;
+    background: #2e9396;
+    border-radius: 50%;
+    z-index: 1000000;
+    display: none;
+    cursor: pointer;
+    
+}
+
+
+
+.scroll-btn i{
+    
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight:900;
+    
+    
+}
+
+/*scroll-end*/
+
+
 /*header section start*/
 
 .header-bg {
 
     position: absolute;
-    top: 28px;
+    top: 0px;
     left: 0px;
     z-index: 999999999;
+    
 
 }
 
+
+.fixed-nav{
+    
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    background: #2e9396;
+    animation: smothly 1s linear;
+    
+    
+}
+
+@keyframes smothly{
+    
+    0%{
+        
+        top:-60px;
+        
+    }100%{
+        
+        top:0px;
+        
+    }
+    
+    
+}
 
 
 .header-bg .header .logo {
 
     width: 120px;
     float: left;
+    
 
 }
 
 .header-bg .header .logo img {
 
-
+    margin:28px 0px;
     margin-left: 17px;
 
 }
@@ -256,15 +316,18 @@ img {
 
 .header-bg .header .menu ul li a {
 
+    
+    display: block;
     text-transform: uppercase;
     color: #ffffff;
     font-size: 14px;
     font-family: var(--montserrat);
     font-weight: 400;
-    margin: 0px 29px;
+    margin: 28px 29px;
     position: relative;
     transition: all linear .4s;
     -webkit-transition: all linear .4s;
+    
 
 }
 
@@ -335,7 +398,7 @@ img {
 }
 
 
-/*header section end*/
+/*header section end
 
 
 
